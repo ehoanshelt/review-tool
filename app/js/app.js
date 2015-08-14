@@ -8,8 +8,13 @@ app.directive("teamControl",function() {
     controller: function() {
       this.teams = teams;
       this.need = [];
+      this.employee = [];
       this.trace = "";
 
+      this.addEmployee = function(team){
+        team.employees.push(this.employee);
+        this.employee = {};
+      };
       this.addNeed = function(team){
         team.needs.push(this.need);
         this.need = {};
@@ -56,7 +61,9 @@ app.directive("employees",function() {
   var teams = [
     {
       name: "Aquistions",
-      employees : ["Jonathan"],
+      employees : [{
+            name: "Jonathan"
+      }],
       needs: [{
             need: "We need all the help we can get!",
             author: "ryan@wpengine.com"
@@ -64,7 +71,9 @@ app.directive("employees",function() {
     },
     {
       name: "Install Base",
-      employees : ["Ryan"],
+      employees : [{
+            name: "Ryan"
+      }],
       needs: [{
             need: "We need to find out if we can sell support as a product",
             author: "dustin@wpengine.com"
