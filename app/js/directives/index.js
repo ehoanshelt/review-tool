@@ -1,5 +1,4 @@
-(function(){
-var app = angular.module("teamManagement", []);
+var app = angular.module('team-directives', []);
 
 app.directive("teamControl",function() {
   return {
@@ -52,24 +51,3 @@ app.directive("employees",function() {
     templateUrl: 'http://localhost:8000/app/partials/employees/employees.html',
   };
 });
-
-  var teams = [
-    {
-      name: "Team 1",
-      employees : ["Ryan", "Andrew"],
-      needs: [{
-            need: "We need all the help we can get!",
-            author: "ryan@wpengine.com"
-      }]
-    },
-    {
-      name: "Team 2",
-      employees : ["Eric", "Dustin"],
-      needs: [{
-            need: "We need to find out if we can sell support as a product",
-            author: "dustin@wpengine.com"
-      }]
-    }
-  ];
-
-})();
