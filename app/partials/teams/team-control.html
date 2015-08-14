@@ -1,7 +1,7 @@
 <div class="teams">
-      <ul>
-          <li ng-repeat="team in teamCtrl.teams">
-            {{team.name}}
+
+          <div class="team" ng-repeat="team in teamCtrl.teams">
+            <h3>{{team.name}}</h3>
 
                   <!--Employee Loop-->
                   <employees></employees>
@@ -13,6 +13,4 @@
                 <!--need-form-->
                 <need-form></need-form>
 
-          </li>
-      </ul>
 </div>

@@ -55,16 +55,16 @@ app.directive("employees",function() {
 
   var teams = [
     {
-      name: "Team 1",
-      employees : ["Ryan", "Andrew"],
+      name: "Aquistions",
+      employees : ["Jonathan"],
       needs: [{
             need: "We need all the help we can get!",
             author: "ryan@wpengine.com"
       }]
     },
     {
-      name: "Team 2",
-      employees : ["Eric", "Dustin"],
+      name: "Install Base",
+      employees : ["Ryan"],
       needs: [{
             need: "We need to find out if we can sell support as a product",
             author: "dustin@wpengine.com"

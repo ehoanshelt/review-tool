@@ -1,7 +1,4 @@
     <div class="needForm">
-      <!--Show Button -->
-      <button ng-click="trackCtrl.setTracker(teamCtrl, team)" style="margin-left: 39px; margin-top: 7px;" ng-hide="trackCtrl.isTracker(teamCtrl, team)" class="btn btn-primary">Add Need <span class="glyphicon glyphicon-plus bold" style="font-size:15px;" aria-hidden="true" ng-click="trackCtrl.setTracker(teamCtrl, team)"></span></button>
-
       <!--Form-->
       <div class="panel panel-default" ng-show="trackCtrl.isTracker(teamCtrl, team)">
         <div class="panel-heading">Add a Need for {{team.name}}</div>
@@ -36,5 +33,3 @@
         </div><!--End panel-body-->
       </div><!--End panel-->
     </div><!--End .needForm-->
-  </ul>
-</ul>

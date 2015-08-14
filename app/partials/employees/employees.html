@@ -1,8 +1,13 @@
-<ul>
-  <li>Employees</li>
-  <ul>
-        <li ng-repeat="employee in team.employees">
-          {{employee}}
-        </li>
-  </ul>
-</ul>
+    <div class="panel panel-default">
+      <div class="panel-heading">Employees
+        <button class="btn btn-primary btn-xs pull-right">Add Employee <span class="glyphicon glyphicon-plus bold" style="font-size:15px;" aria-hidden="true"></span></button>
+</div>
+      <div class="panel-body">
+          <ul class="list-group">
+              <li class="list-group-item" ng-repeat="employee in team.employees">
+                {{employee}}
+              </li>
+          </ul>
+      </div><!--.panel-body-->
+    </div><!--.panel-->
+  </div><!--.col-md-6-->

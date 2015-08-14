@@ -1,6 +1,10 @@
-<ul>
-  <li>Needs</li>
-  <ul>
-        <li ng-repeat="need in team.needs">
-          {{need.need}} - {{need.author}}
-        </li>
+          <div class="panel panel-default">
+            <div class="panel-heading">Needs
+            <button ng-click="trackCtrl.setTracker(teamCtrl, team)" ng-hide="trackCtrl.isTracker(teamCtrl, team)" class="btn btn-primary btn-xs pull-right">Add Need <span class="glyphicon glyphicon-plus bold" style="font-size:15px;" aria-hidden="true"></span></button>
+</div>
+            <div class="panel-body">
+                <ul class="list-group">
+                  <li class="list-group-item" ng-repeat="need in team.needs">
+                    {{need.need}} - {{need.author}}
+                  </li>
+                </ul>
